@@ -31,7 +31,6 @@ async function loadAndRunModel(){
     arrayOutput.map(item => {
         const x = item[1] * 345 + 170
         const y = item[0] * 345 + 15
-        console.log(x,y)
 
         const p = document.createElement("div")
         p.setAttribute("class", "point")
@@ -40,6 +39,14 @@ async function loadAndRunModel(){
 
         container.appendChild(p)
     })
+    exampleInputTensor.dispose()
+    imageTensor.dispose()
+    croppedTensor.dispose()
+    resizedTensor.dispose()
+    tensorOutput.dispose()
+    tensorSqueeze.dispose()
+    movenet.dispose()
+    console.log(tf.memory())
 }
 
 loadAndRunModel()
