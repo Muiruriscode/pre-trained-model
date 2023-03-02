@@ -5,3 +5,4 @@ The model predicts positions of the following 17 human keypoints from an image: 
 ## Detection
 ![pose](./assets/pose.png)
 ![pose details](./assets/pose%20details.png)
+![point detection](./assets/point%20detect.png)
